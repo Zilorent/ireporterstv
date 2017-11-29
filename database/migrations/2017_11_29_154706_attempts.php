@@ -13,7 +13,7 @@ class Attempts extends Migration
      */
     public function up()
     {
-        Schema::table('attempts', function (Blueprint $table) {
+        Schema::create('attempts', function (Blueprint $table) {
             $table->string('session_id');
             $table->integer('attempts');
         });
